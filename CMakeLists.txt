@@ -1,0 +1,7 @@
+cmake_minimum_required (VERSION 3.5)
+set( CMAKE_CXX_COMPILER "D://MinGW//bin//g++.exe" )
+set( CMAKE_C_COMPILER "D://MinGW//bin//gcc.exe" )
+project(tryword)
+aux_source_directory(./ SRCS)
+include_directories(./)
+add_executable(tryword ${SRCS})
